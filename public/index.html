@@ -1,47 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuxBid Genesis</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LuxBid | Luxury Marketplace</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
-    <h1>💎 LuxBid</h1>
-    <p>The Future of Luxury Auctions</p>
+<header class="header">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="LuxBid Logo">
+
+<h1>LuxBid</h1>
+
+</div>
+
+<button id="loginBtn">
+Continue with Pi
+</button>
+
 </header>
 
-<main>
-
 <section class="hero">
-    <h2>Luxury Meets Blockchain</h2>
-    <p>Buy, Sell and Auction rare collectibles securely with Pi Network.</p>
 
-    <button id="loginBtn">
-        Login with Pi
-    </button>
-    <br><br>
+<h2>
+Where Luxury Meets Blockchain
+</h2>
 
-<a href="add-item.html">
-    <button>
-        ➕ Add New Auction
-    </button>
+<p>
+
+Buy, Sell and Auction the World's Finest Luxury Assets using Pi Network.
+
+</p>
+
+<a href="#auctions" class="hero-btn">
+
+Explore Auctions
+
 </a>
+
 </section>
 
-<section id="products">
+<section class="stats">
+
+<div class="stat-card">
+
+<h3 id="membersCount">0</h3>
+
+<p>Members</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="auctionCount">0</h3>
+
+<p>Live Auctions</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="volumeCount">0 π</h3>
+
+<p>Total Volume</p>
+
+</div>
+
 </section>
 
-</main>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/config.js"></script>
-<script src="js/pi.js"></script>
-<script src="js/supabase.js"></script>
-<script src="js/app.js"></script>
+<section class="search">
+
+<input
+type="text"
+placeholder="Search luxury items..."
+>
+
+</section>
+
+<section class="categories">
+
+<h2>Categories</h2>
+
+<div class="category-grid">
+
+<div class="category">💎 Jewelry</div>
+
+<div class="category">⌚ Watches</div>
+
+<div class="category">🎨 Art</div>
+
+<div class="category">🏺 Antiques</div>
+
+<div class="category">🪙 Rare Coins</div>
+
+<div class="category">👜 Fashion</div>
+
+</div>
+
+</section>
+
+<section id="auctions">
+
+<h2>🔥 Live Auctions</h2>
+
+<div id="auctionGrid">
+
+<div class="loading">
+
+Loading Live Auctions...
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 LuxBid
+
+Where Luxury Meets Blockchain
+
+</p>
+
+</footer>
+
+<nav class="bottom-nav">
+
+<a href="#">🏠 Home</a>
+
+<a href="#">🔨 Auctions</a>
+
+<a href="#">➕ Sell</a>
+
+<a href="#">❤️ Favorites</a>
+
+<a href="#">👤 Profile</a>
+
+</nav>
+
+<script src="app.js"></script>
 
 </body>
+
 </html>
